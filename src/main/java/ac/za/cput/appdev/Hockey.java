@@ -7,7 +7,10 @@ package ac.za.cput.appdev;
 
 /**
  *
+
+ * @author Zela Neizla Inacio Buta
  * @author Zela NNeizla Inacio Buta
+
  */
 public class Hockey {
     private String naame;
