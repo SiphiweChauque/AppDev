@@ -5,8 +5,8 @@
  */
 package ac.za.cput.appdev;
 
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.Before;
 import static org.junit.Assert.*;
 import org.junit.jupiter.api.Disabled;
 
@@ -23,7 +23,7 @@ public class SoccerTest {
     public SoccerTest() {
     }
     
-    @Before
+    //@Before
     public void setObjects() {
         TeamA = new Soccer();
         TeamB = new Soccer();
