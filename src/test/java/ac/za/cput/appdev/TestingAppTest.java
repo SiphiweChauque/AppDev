@@ -41,7 +41,7 @@ public class TestingAppTest {
      * Test of multiply method, of class TestingApp.
      */
     @Test
-    public void testMultiply() {
+    public void multiplyEqualityTest() {
         System.out.println("multiply");
         int num = 25;
         int num2 = 4;
@@ -51,6 +51,28 @@ public class TestingAppTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
+    }
+    @Test
+    public void multiplyFailTest() {
+        System.out.println("multiply");
+        int num = 2;
+        int num2 = 4;
+        TestingApp instance = new TestingApp();
+        int expResult = 100;
+        int result = instance.multiply(num, num2);
+        assertEquals(expResult, result);
+        
+    }
+    @Test
+    public void multiplyFailTest2() {
+        System.out.println("multiply");
+        int num = 2;
+        int num2 = 4;
+        TestingApp instance = new TestingApp();
+        int expResult = 8;
+        int result = instance.multiply(num, num2);
+        assertEquals(expResult, result);
+        fail("deliberately made the test fail");
     }
     
 }
