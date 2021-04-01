@@ -7,7 +7,7 @@ package ac.za.cput.appdev;
 
 /**
  *
- * @author Cristina
+ * @author Zela Neizla Inacio Buta
  */
 public class Hockey {
 
