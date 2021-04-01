@@ -15,6 +15,10 @@ public class TestingApp {
     int result=num*num2;
     return result;
     }
+    public double division(double num, double num2){
+    double result=num/num2;
+    return result;
+    }
    /* public  int addition(String s1,String s2){
     return 0;
     }*/

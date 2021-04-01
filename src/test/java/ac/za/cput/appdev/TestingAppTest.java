@@ -14,10 +14,13 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author FARAI SKOOL
+ * @author FARAI Malone Chawora 
+ * Student Number 220145547
  */
 public class TestingAppTest {
     TestingApp instance;
+     TestingApp instance2;
+      TestingApp instance3;
     
     public TestingAppTest() {
     }
@@ -29,6 +32,8 @@ public class TestingAppTest {
     @Before
     public void setUp() {
         instance = new TestingApp();
+        instance2 = new TestingApp();
+        instance3=instance;
     }
     
    
@@ -45,7 +50,7 @@ public class TestingAppTest {
         int expResult = 100;
         int result = instance.multiply(num, num2);
         assertEquals(expResult, result);
-        // test was successful
+        // test was successful method is working
         
     }
     @Test
@@ -59,6 +64,7 @@ public class TestingAppTest {
         assertEquals(expResult, result);
         //test failed because expResult not equal to result
     }
+    
     @Test
     public void multiplyFailTest2() {
         System.out.println("multiply");
@@ -70,5 +76,29 @@ public class TestingAppTest {
         assertEquals(expResult, result);
         fail("deliberately made the test fail");
     }
+    @Test
+    public void testingObjectIdentity(){
+    assertSame(instance,instance3);
+    //test passed because objects are  identical
     
-}
+    }
+    
+    @Test
+    public void testingObjectIdentity2(){
+    assertNotSame(instance,instance3);
+    //test passed because test was expected to fail that means object really is identical 
+    
+    }
+    @Test
+    public void testingObjectIdentity3(){
+    assertSame(instance,instance2);
+    //test failed  because objects are not identical
+    }
+    @Test
+    public void testingObjectEquality(){
+    assertEquals(instance,instance2);
+    // test failed meaning instance and instance 2 are not equal
+    
+ 
+    }
+  }
