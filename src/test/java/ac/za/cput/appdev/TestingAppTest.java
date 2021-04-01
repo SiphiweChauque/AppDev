@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package ac.za.cput.appdev;
+import java.util.*;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -11,6 +12,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
+import org.junit.jupiter.api.Disabled;
+
 
 /**
  *
@@ -101,4 +105,36 @@ public class TestingAppTest {
     
  
     }
+    @Ignore
+    @Test
+    public void testingObjectEquality2(){
+    assertEquals(instance,instance3);
+    // test is ignored  
+    
+    }
+   @Test(timeout=10)
+  public void timeoutTest(){
+      int [] array=new int[5];
+     array[0]=6;
+      array[1]=6;
+      array[2]=6;
+      array[3]=6;
+      for(int i =0;i<array.length;i++){
+       System.out.println(array+"the are the contents of the array");
+       
+       //test fail because of timeout limitation
+  }
+  }
+     @Disabled
+    @Test
+    public void testDiabled(){
+         System.out.println("the test is Diabled");
+         //the test is diaablled
+    }
+    @Test(timeout=1000)
+    public void timeOutTest2(){
+    while (true);
+    //test made to stop because of timeout restriction
+    }
+    
   }
