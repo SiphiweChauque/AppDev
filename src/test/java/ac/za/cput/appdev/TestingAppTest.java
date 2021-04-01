@@ -17,25 +17,21 @@ import static org.junit.Assert.*;
  * @author FARAI SKOOL
  */
 public class TestingAppTest {
+    TestingApp instance;
     
     public TestingAppTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
+   
     
-    @AfterClass
-    public static void tearDownClass() {
-    }
+    
     
     @Before
     public void setUp() {
+        instance = new TestingApp();
     }
     
-    @After
-    public void tearDown() {
-    }
+   
 
     /**
      * Test of multiply method, of class TestingApp.
@@ -45,30 +41,30 @@ public class TestingAppTest {
         System.out.println("multiply");
         int num = 25;
         int num2 = 4;
-        TestingApp instance = new TestingApp();
+        
         int expResult = 100;
         int result = instance.multiply(num, num2);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        // test was successful
+        
     }
     @Test
     public void multiplyFailTest() {
         System.out.println("multiply");
         int num = 2;
         int num2 = 4;
-        TestingApp instance = new TestingApp();
+        
         int expResult = 100;
         int result = instance.multiply(num, num2);
         assertEquals(expResult, result);
-        
+        //test failed because expResult not equal to result
     }
     @Test
     public void multiplyFailTest2() {
         System.out.println("multiply");
         int num = 2;
         int num2 = 4;
-        TestingApp instance = new TestingApp();
+        
         int expResult = 8;
         int result = instance.multiply(num, num2);
         assertEquals(expResult, result);
