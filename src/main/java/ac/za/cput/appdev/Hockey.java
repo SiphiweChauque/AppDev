@@ -7,29 +7,31 @@ package ac.za.cput.appdev;
 
 /**
  *
+
  * @author Zela Neizla Inacio Buta
+ * @author Zela NNeizla Inacio Buta
+
  */
 public class Hockey {
-
-    private String name;
-    private int gamewon;
+    private String naame;
+    private int gameWon;
     private int gameLost;
     private int Scores;
 
-    public String getName() {
-        return name;
+    public String getNaame() {
+        return naame;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNaame(String naame) {
+        this.naame = naame;
     }
 
-    public int getGamewon() {
-        return gamewon;
+    public int getGameWon() {
+        return gameWon;
     }
 
-    public void setGamewon(int gamewon) {
-        this.gamewon = gamewon;
+    public void setGameWon(int gameWon) {
+        this.gameWon = gameWon;
     }
 
     public int getGameLost() {
@@ -48,11 +50,5 @@ public class Hockey {
         this.Scores = Scores;
     }
     
-    
-     @Override
-    public String toString() 
-    {
-return "Hockey{" + "name=" + name + ", gamewon=" + gamewon + ", gameLost=" + gameLost + ", Scores=" + Scores + '}';
-    }
     
 }
