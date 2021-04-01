@@ -17,7 +17,7 @@ import org.junit.jupiter.api.Disabled;
  */
 public class HockeyTest {
     
-    private Hockey Team1;
+   private Hockey Team1;
     private Hockey Team2;
     private Hockey Team3;
     private Hockey Team4;
@@ -26,7 +26,7 @@ public class HockeyTest {
     public HockeyTest() {
     }
     
-    @Before
+    //@Before
     public void setObject()
     {
         Team1 = new Hockey();
@@ -75,4 +75,5 @@ public class HockeyTest {
     
 
    
+
 }
