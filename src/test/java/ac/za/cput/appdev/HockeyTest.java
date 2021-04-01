@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Disabled;
 
 /**
  *
- * @author Cristina
+ * @author Zela Neizla Inacio Buta
  */
 public class HockeyTest {
     
