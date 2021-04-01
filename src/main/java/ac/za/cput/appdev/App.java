@@ -8,10 +8,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        Baseball sport=new Baseball("baseball",89,6,8);
-        //sport.displayDetails();
-        //sport.pointForTeam(8);
-        System.out.println(sport.pointForTeam(8));
+        TestingApp multiplication=new TestingApp ();
+        multiplication.multiply(6564, 848);
+        System.out.println("the multiple of 6564 and 848 is "+multiplication);
+        
+        
     }
     
 }
