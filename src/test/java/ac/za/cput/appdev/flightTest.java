@@ -15,7 +15,8 @@ import org.junit.jupiter.api.Disabled;
 
 /**
  *
- * @author User
+ * @author Ngonidzaishe Erica Chipato
+ * 218327315
  */
 public class flightTest {
     
@@ -40,19 +41,23 @@ public class flightTest {
     }
     
     
-    
+    //Testing for object identity
     @Test 
     public void flightIdentity(){
     assertSame(flight1,flight1);
     }
     
+    // object equality test
     @Test 
     public void flightEquality(){
     assertSame(flight2,flight1);
     }
-
+    
+    
+    //Test meant to fail 
     @Test 
-   public void flight(){
+   public void flightFail(){
+       assertSame(flight3,flight1);
        fail("This is a failed test ");
   }
     
@@ -61,11 +66,11 @@ public class flightTest {
     // can't run more than 5 seconds or else it fails
     @Test(timeout = 5000)
     public void testSlowMethod() {
-        
+       while(true); 
     }
     
     
-   
+    
     @Disabled("Disabled due to flight delay.")
     @Test  
     public void testDisable() {
